@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { api, useToast, MESES, ESTADOS, CodigoPicker, PersonaPicker } from './common';
+import { api, useToast, MESES, ESTADOS, ESTADO_COLOR, CodigoPicker, PersonaPicker } from './common';
 
 type Fila = { key: number; numero: number; dia: number; mes: number; codigo_id: number | null; a_cargo_id: number | null; estado: number; st: 'nuevo' | 'ok' | 'error'; msg?: string };
 let K = 1;
@@ -131,7 +131,7 @@ export default function CargaRapida() {
             {rows.map((r) => {
               const ro = r.st === 'ok';
               return (
-                <tr key={r.key} onKeyDown={(e) => onKey(e, r)} className={ro ? 'opacity-50' : ''} style={r.st === 'error' ? { background: 'rgba(240,86,106,.08)' } : undefined}>
+                <tr key={r.key} onKeyDown={(e) => onKey(e, r)} className={ro ? 'opacity-50' : ''} data-e={r.st !== 'error' && ESTADO_COLOR[r.estado] ? r.estado : undefined} style={r.st === 'error' ? { background: 'rgba(240,86,106,.08)' } : { ['--c' as any]: ESTADO_COLOR[r.estado] }}>
                   <td><input className="inp w-20" type="number" disabled={ro} value={r.numero} onChange={(e) => set(r.key, { numero: Number(e.target.value) })} /></td>
                   <td className="muted">{nhDe(r.numero) ?? '—'}</td>
                   <td><input className="inp w-16" type="number" min={1} max={31} disabled={ro} value={r.dia} onChange={(e) => set(r.key, { dia: Number(e.target.value) })} /></td>

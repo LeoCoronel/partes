@@ -13,6 +13,7 @@ export default function AuthGate({ children }: { children: (info: { demo: boolea
   };
   useEffect(() => {
     if (!firebaseConfigured) { start(demoAdapter(), true); return; }
+    if (!allowedEmail) { start(new FirestoreAdapter(db()), false); return; } // sin login: acceso directo
     return onUser((u) => {
       if (!u) return setSt({ k: 'out' });
       if (allowedEmail && u.email?.toLowerCase() !== allowedEmail) return setSt({ k: 'denied', email: u.email ?? '' });

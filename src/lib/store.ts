@@ -3,7 +3,7 @@ import {
   MESES, MES_LARGO, norm, slug, type Codigo,
 } from './catalog';
 
-export type Config = { seeded: boolean; nhBase: Record<string, number>; catCodigo: Record<string, string | null>; catExtra: { id: string; nombre: string }[]; codigosExtra: CodigoExtra[]; capSeeded?: boolean };
+export type Config = { seeded: boolean; nhBase: Record<string, number>; catCodigo: Record<string, string | null>; catExtra: { id: string; nombre: string }[]; codigosExtra: CodigoExtra[]; capSeeded?: boolean; capSeeded2?: boolean; capSeeded3?: boolean; capSeeded4?: boolean; capSeeded5?: boolean; capSeeded6?: boolean };
 export type CodigoExtra = { id: string; servicio: string; rubro: string; descripcion: string };
 export type Personal = { id: string; legajo: string; jerarquia: string; nombre: string; activo: number; orden: number | null };
 export type Parte = {
@@ -175,13 +175,99 @@ export class Store {
   }
   /** Una sola vez: crea los códigos propios de capacitación y los sugiere en las categorías que todavía no tienen código (respeta lo que ya corregiste). */
   private async migrarCapacitaciones() {
+    await this.migrarCapacitaciones1();
+    await this.migrarCapacitaciones2();
+    await this.migrarCapacitaciones3();
+    await this.migrarCapacitaciones4();
+    await this.migrarDecisiones();
+    await this.migrarCepro();
+  }
+  /** Según el manual GB IV-03: la instrucción interna va en 99 Otros (no en 08 Técnico) y «representación» en 07 Comando. */
+  private async migrarCapacitaciones3() {
+    if (this.config.capSeeded3) return;
+    const patch: Partial<Config> = { capSeeded3: true }; this.config.capSeeded3 = true;
+    if (await this.moverCapacitaciones('08', '99', patch)) { /* ver migrarCapacitaciones4 */ }
+    const rep = this.categorias().find((x) => /representacion/.test(norm(x.nombre)));
+    if (rep && !rep.codigo_id && !(rep.id in this.config.catCodigo)) { this.config.catCodigo = { ...this.config.catCodigo, [rep.id]: CODIGOS.find((c) => c.servicio === '07' && c.cod === 15)!.id }; patch.catCodigo = this.config.catCodigo; }
+    await this.adapter.saveConfig(patch);
+  }
+  /** Mueve los códigos propios de capacitación a otro servicio, renumerándolos y actualizando partes y categorías. */
+  private async moverCapacitaciones(desde: string, hasta: string, patch: Partial<Config>) {
+    const mover = this.config.codigosExtra.filter((c) => c.servicio === desde && c.descripcion.startsWith('CAPACITACION '));
+    if (!mover.length) return false;
+    const map: Record<string, string> = {}; const extra = this.config.codigosExtra.filter((c) => !mover.includes(c));
+    for (const c of mover) { let n = 1; while (extra.some((x) => x.id === `${hasta}-P${n}`)) n++; map[c.id] = `${hasta}-P${n}`; extra.push({ ...c, id: `${hasta}-P${n}`, servicio: hasta }); }
+    this.config.codigosExtra = extra;
+    const cc = { ...this.config.catCodigo }; for (const k of Object.keys(cc)) { const v = cc[k]; if (v && map[v]) cc[k] = map[v]; }
+    this.config.catCodigo = cc;
+    for (const ys of await this.allYears()) {
+      const ch: Parte[] = []; for (const p of ys.values()) if (p.codigo_id && map[p.codigo_id]) { p.codigo_id = map[p.codigo_id]; ch.push(p); }
+      if (ch.length) await this.adapter.savePartes(ch);
+    }
+    patch.codigosExtra = extra; patch.catCodigo = cc;
+    return true;
+  }
+  /** Decisiones del usuario sobre categorías viejas (una sola vez). Pisa el código de la categoría y confirma los partes pendientes. */
+  private async migrarDecisiones() {
+    if (this.config.capSeeded5) return;
+    const patch: Partial<Config> = { capSeeded5: true }; this.config.capSeeded5 = true;
+    let rifas = this.config.codigosExtra.find((c) => c.servicio === '99' && c.descripcion === 'RIFAS PARA EL CUARTEL')?.id;
+    if (!rifas) rifas = await this.addCodigo({ servicio: '99', rubro: 'INTERNO', descripcion: 'RIFAS PARA EL CUARTEL' });
+    const reglas: { re: RegExp; codigo: string; remap?: string }[] = [
+      { re: /^rifer|^rifereo/, codigo: rifas }, { re: /^(citacion|declaracion)$/, codigo: '08-7' },
+      { re: /^inspeccion$/, codigo: '08-2', remap: '08-7' }, { re: /representacion/, codigo: '07-15' },
+      { re: /^1\.3 /, codigo: '01-112' }, { re: /^11\.4 /, codigo: '11-4', remap: '11-2' },
+      { re: /^3\.4 /, codigo: '03-7', remap: '03-16' }, { re: /^intervencion$/, codigo: '07-16' },
+    ];
+    const cc = { ...this.config.catCodigo };
+    for (const r of reglas) for (const c of this.categorias().filter((x) => r.re.test(norm(x.nombre)))) {
+      cc[c.id] = r.codigo; this.config.catCodigo = cc;
+      await this.bulkCodigo(c.id, r.codigo, true);
+      if (r.remap) for (const ys of await this.allYears()) {
+        const ch: Parte[] = []; for (const p of ys.values()) if (p.categoria_id === c.id && p.codigo_id === r.remap) { p.codigo_id = r.codigo; ch.push(p); }
+        if (ch.length) await this.adapter.savePartes(ch);
+      }
+    }
+    patch.catCodigo = cc; patch.codigosExtra = this.config.codigosExtra;
+    await this.adapter.saveConfig(patch);
+  }
+  /** CEPRO/JORNADA/OTRA → propio de capacitación en 07 (una sola vez). */
+  private async migrarCepro() {
+    if (this.config.capSeeded6) return;
+    const patch: Partial<Config> = { capSeeded6: true }; this.config.capSeeded6 = true;
+    const desc = 'CAPACITACION CEPRO / JORNADAS / OTRAS';
+    let id = this.config.codigosExtra.find((c) => c.servicio === '07' && c.descripcion === desc)?.id;
+    if (!id) id = await this.addCodigo({ servicio: '07', rubro: 'CAPACITACION', descripcion: desc });
+    for (const c of this.categorias().filter((x) => /cepro/.test(norm(x.nombre)))) {
+      this.config.catCodigo = { ...this.config.catCodigo, [c.id]: id }; await this.bulkCodigo(c.id, id, true);
+    }
+    patch.catCodigo = this.config.catCodigo; patch.codigosExtra = this.config.codigosExtra;
+    await this.adapter.saveConfig(patch);
+  }
+  /** Las capacitaciones propias quedan en 07 Comando › Capacitación, que es donde ya las ubicás vos. */
+  private async migrarCapacitaciones4() {
+    if (this.config.capSeeded4) return;
+    const patch: Partial<Config> = { capSeeded4: true }; this.config.capSeeded4 = true;
+    await this.moverCapacitaciones('99', '07', patch); await this.moverCapacitaciones('08', '07', patch);
+    await this.adapter.saveConfig(patch);
+  }
+  private async migrarCapacitaciones2() {
+    if (this.config.capSeeded2) return;
+    // CEPRO/JORNADA/OTRA → 08-14 Capacitación (otros), solo si todavía no le asignaste nada.
+    const c = this.categorias().find((x) => /cepro/.test(norm(x.nombre)));
+    const patch: Partial<Config> = { capSeeded2: true };
+    this.config.capSeeded2 = true;
+    if (c && !c.codigo_id && !(c.id in this.config.catCodigo)) { this.config.catCodigo = { ...this.config.catCodigo, [c.id]: '08-14' }; patch.catCodigo = this.config.catCodigo; }
+    await this.adapter.saveConfig(patch);
+  }
+  private async migrarCapacitaciones1() {
     if (this.config.capSeeded) return;
     const defs: [string, string][] = [['1RA', 'CATEGORIA 1RA'], ['2DA', 'CATEGORIA 2DA'], ['3RA', 'CATEGORIA 3RA'], ['4TA', 'CATEGORIA 4TA'], ['CUERDAS', 'BRIGADA DE CUERDAS'], ['FORESTAL', 'BRIGADA FORESTAL'], ['NAUTICA', 'BRIGADA NAUTICA']];
     const ids: Record<string, string> = {};
     for (const [k, d] of defs) {
       const descripcion = `CAPACITACION ${d}`;
-      const ya = this.config.codigosExtra.find((c) => c.servicio === '08' && c.descripcion === descripcion);
-      ids[k] = ya ? ya.id : await this.addCodigo({ servicio: '08', rubro: 'CAPACITACION', descripcion });
+      const ya = this.config.codigosExtra.find((c) => c.descripcion === descripcion);
+      ids[k] = ya ? ya.id : await this.addCodigo({ servicio: '07', rubro: 'CAPACITACION', descripcion });
     }
     const sug: Record<string, string> = {};
     for (const c of this.categorias()) {

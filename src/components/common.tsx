@@ -3,7 +3,9 @@ import Fuse from 'fuse.js';
 
 export const MESES = ['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'];
 export const ESTADOS: Record<number, string> = { 0: 'FALTANTE', 1: 'CERRADO', 3: 'PERSONAL', 4: 'CAPACITACION' };
-export const ESTADO_COLOR: Record<number, string> = { 0: '#35b6e8', 1: '#2fbf71', 3: '#f5a524', 4: '#8b7bff' };
+// Colores de la planilla: solo PERSONAL (texto azul) y CAPACITACION (fondo cyan, texto magenta). Faltante y cerrado van sin color.
+export const ESTADO_COLOR: Record<number, string> = { 3: '#4a86e8', 4: '#00ffff' };
+export const ESTADO_CELDA: Record<number, { bg: string; fg: string }> = { 3: { bg: '#ffffff', fg: '#4a86e8' }, 4: { bg: '#00ffff', fg: '#ff00ff' } };
 
 export async function api(method: string, url: string, body?: unknown) {
   const { handle } = await import('../lib/localApi');
@@ -26,7 +28,7 @@ export function MesChip({ mes }: { mes: number | string | null }) {
 }
 
 export function EstadoChip({ estado }: { estado: number }) {
-  const c = ESTADO_COLOR[estado] ?? '#8a909c';
+  const c = ESTADO_COLOR[estado] ?? '#8a909c';  // sin color propio para 0 y 1
   return <span className="chip" style={{ background: `${c}26`, color: c }}>{estado} - {ESTADOS[estado] ?? '?'}</span>;
 }
 

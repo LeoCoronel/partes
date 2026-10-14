@@ -4,7 +4,7 @@ import { api, useToast } from './common';
 export default function PersonalManager() {
   const [per, setPer] = useState<any[]>([]); const [jer, setJer] = useState<any[]>([]);
   const [filtro, setFiltro] = useState(''); const toast = useToast();
-  const [f, setF] = useState<any>({ legajo: '', nombre: '', jerarquia: 'Bombero', j: '', grupo: '', turno: 'D' });
+  const [f, setF] = useState<any>({ legajo: '', nombre: '', jerarquia: 'Bombero', j: '' });
   const [sug, setSug] = useState<number | null>(null);
 
   useEffect(() => { api('GET', '/api/catalogos').then((c) => { setPer(c.personal); setJer(c.jerarquias); }); }, []);
@@ -40,10 +40,6 @@ export default function PersonalManager() {
           <label className="text-xs muted">Jerarquía<select className="inp block mt-1" value={f.jerarquia} onChange={(e) => setF({ ...f, jerarquia: e.target.value })}>
             {[...jer].reverse().map((j) => <option key={j.nombre}>{j.nombre}</option>)}</select></label>
           <label className="text-xs muted">N° J (sugerido {sug ?? '…'})<input className="inp block w-24 mt-1" type="number" min={1} placeholder={String(sug ?? '')} value={f.j} onChange={(e) => setF({ ...f, j: e.target.value })} /></label>
-          <label className="text-xs muted">Grupo<select className="inp block mt-1" value={f.grupo} onChange={(e) => setF({ ...f, grupo: e.target.value })}>
-            <option value="">—</option>{[1, 2, 3, 4, 5, 6].map((g) => <option key={g}>{g}</option>)}</select></label>
-          <label className="text-xs muted">Turno<select className="inp block mt-1" value={f.turno} onChange={(e) => setF({ ...f, turno: e.target.value })}>
-            <option value="D">☀ Diurna</option><option value="N">🌙 Nocturna</option></select></label>
           <button className="btn btn-primary" onClick={add}>Agregar</button>
         </div>
       </div>
@@ -55,7 +51,7 @@ export default function PersonalManager() {
 
       <div className="card overflow-auto max-h-[65vh]">
         <table className="tbl">
-          <thead><tr><th>J</th><th>Legajo</th><th>Jerarquía</th><th>Apellido y nombre</th><th>Grupo</th><th>Turno</th><th>Exento</th><th>Orden</th><th></th></tr></thead>
+          <thead><tr><th>J</th><th>Legajo</th><th>Jerarquía</th><th>Apellido y nombre</th><th>Orden</th><th></th></tr></thead>
           <tbody>
             {activos.filter(match).map((p) => (
               <tr key={p.id}>
@@ -64,9 +60,6 @@ export default function PersonalManager() {
                 <td><select className="inp" value={p.jerarquia} onChange={(e) => act(p.id, { jerarquia: e.target.value }, 'Jerarquía cambiada: revisá si cambia su J.')}>
                   {[...jer].reverse().map((j) => <option key={j.nombre}>{j.nombre}</option>)}</select></td>
                 <td><input className="inp w-60" defaultValue={p.nombre} onBlur={(e) => e.target.value !== p.nombre && act(p.id, { nombre: e.target.value })} /></td>
-                <td><select className="inp" value={p.grupo ?? ''} onChange={(e) => act(p.id, { grupo: e.target.value })}><option value="">—</option>{[1, 2, 3, 4, 5, 6].map((g) => <option key={g}>{g}</option>)}</select></td>
-                <td><select className="inp" value={p.turno} onChange={(e) => act(p.id, { turno: e.target.value })}><option value="D">☀ D</option><option value="N">🌙 N</option></select></td>
-                <td><input type="checkbox" checked={!!p.exento} onChange={(e) => act(p.id, { exento: e.target.checked })} /></td>
                 <td className="whitespace-nowrap">
                   <button className="btn" disabled={p.j === 1} onClick={() => act(p.id, { accion: 'mover', j: p.j - 1 })} title="Subir un J" aria-label="Subir">↑</button>{' '}
                   <button className="btn" disabled={p.j === activos.length} onClick={() => act(p.id, { accion: 'mover', j: p.j + 1 })} title="Bajar un J" aria-label="Bajar">↓</button>{' '}

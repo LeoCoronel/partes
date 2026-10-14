@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, useCallback } from 'react';
-import { api, useToast, MesChip, EstadoChip, MESES, ESTADOS, CodigoPicker, PersonaPicker, codigoLabel } from './common';
+import { api, useToast, MesChip, EstadoChip, MESES, ESTADOS, ESTADO_COLOR, ESTADO_CELDA, CodigoPicker, PersonaPicker, codigoLabel } from './common';
 
 const LIMIT = 100;
 
@@ -65,11 +65,11 @@ export default function PartesTable() {
           </tr></thead>
           <tbody>
             {data.rows.map((r: any) => (
-              <tr key={r.id}>
+              <tr key={r.id} data-e={ESTADO_COLOR[r.estado] ? r.estado : undefined} style={{ ['--c' as any]: ESTADO_COLOR[r.estado] }}>
                 <td className="font-semibold">{r.numero}</td>
                 <td className="muted">{r.nh ?? '—'}</td>
                 <td className={r.dia < 1 ? 'text-bad font-semibold' : ''} title={r.dia < 1 ? 'Día inválido' : ''}>{r.dia}</td>
-                <td><MesChip mes={r.mes} /></td>
+                <td className="rojo">{r.mes >= 1 && r.mes <= 12 ? MESES[r.mes - 1] : '—'}</td>
                 <td className="min-w-72">
                   {editCod === r.id ? (
                     <CodigoPicker codigos={cat.codigos} servicios={cat.servicios} value={r.codigo_id}
@@ -92,7 +92,7 @@ export default function PartesTable() {
                 </td>
                 <td>
                   <select className="inp" value={r.estado} onChange={(e) => patch(r.id, { estado: Number(e.target.value) })}
-                    style={{ color: 'inherit' }}>
+                    style={ESTADO_CELDA[r.estado] ? { background: ESTADO_CELDA[r.estado].bg, color: ESTADO_CELDA[r.estado].fg, fontWeight: 600 } : undefined}>
                     {Object.entries(ESTADOS).map(([k, v]) => <option key={k} value={k}>{k} - {v}</option>)}
                   </select>
                 </td>
@@ -101,13 +101,13 @@ export default function PartesTable() {
                     <option value="">—</option><option>FIRMAR</option><option>ARCHIVO</option>
                   </select>
                 </td>
-                <td><input type="date" className="inp" value={r.impreso ?? ''} onChange={(e) => patch(r.id, { impreso: e.target.value || null })} /></td>
-                <td>
+                <td className="rojo"><input type="date" className="inp" value={r.impreso ?? ''} onChange={(e) => patch(r.id, { impreso: e.target.value || null })} /></td>
+                <td className="rojo">
                   <select className="inp" value={r.mes_archivo ?? ''} onChange={(e) => patch(r.id, { mes_archivo: e.target.value || null })}>
                     <option value="">—</option>{MESES.map((m) => <option key={m}>{m}</option>)}
                   </select>
                 </td>
-                <td>
+                <td className="rojo">
                   <select className="inp" value={r.mes_gib ?? ''} onChange={(e) => patch(r.id, { mes_gib: e.target.value || null })} title="Mes en que se cargó en GIB">
                     <option value="">—</option>{MESES.map((m) => <option key={m}>{m}</option>)}
                   </select>

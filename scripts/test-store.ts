@@ -38,20 +38,41 @@ const mk = async (seed = true) => { const s = new Store(new MemoryAdapter()); aw
 
   // códigos propios y capacitaciones
   const cat0 = (await handle('GET', '/api/catalogos'));
-  t('7 códigos propios de capacitación', cat0.codigos.filter((c: any) => c.propio).length === 7, cat0.codigos.filter((c: any) => c.propio).length);
-  const c4ta = cat0.categorias.find((c: any) => c.nombre.includes('(4TA)')); t('4ta sugiere código propio', c4ta.codigo_id === '08-P4', c4ta.codigo_id);
+  t('7 códigos propios de capacitación', cat0.codigos.filter((c: any) => c.propio && c.descripcion.startsWith('CAPACITACION ')).length === 8);
+  const c4ta = cat0.categorias.find((c: any) => c.nombre.includes('(4TA)')); t('4ta sugiere código propio', c4ta.codigo_id === '07-P4', c4ta.codigo_id);
+  t('CEPRO queda en propio de capacitación 07', cat0.categorias.find((c: any) => c.nombre.includes('CEPRO')).codigo_id === '07-P8');
+  t('representación sugiere 07-15', cat0.categorias.find((c: any) => /REPRESENTACION/.test(c.nombre)).codigo_id === '07-15');
+  {
+    const cs = cat0.categorias; const g = (re: RegExp) => cs.find((c: any) => re.test(c.nombre));
+    t('1.3 → 01-112 y sin pendientes', g(/^1\.3 /).codigo_id === '01-112' && g(/^1\.3 /).pendientes === 0, g(/^1\.3 /));
+    t('9.3 → 07-15 resuelto', g(/REPRESENTACION/).codigo_id === '07-15' && g(/REPRESENTACION/).pendientes === 0);
+    t('cañaveral 11-4', g(/^11\.4/).codigo_id === '11-4'); t('coop same 03-7', g(/^3\.4/).codigo_id === '03-7');
+    t('inspeccion 08-2', g(/^inspeccion$/).codigo_id === '08-2'); t('intervencion 07-16', g(/^intervencion$/).codigo_id === '07-16' && g(/^intervencion$/).pendientes === 0);
+    t('riferos código propio', cat0.codigos.find((c: any) => c.id === g(/^riferos$/).codigo_id)?.propio === 1 && g(/^riferos$/).pendientes === 0);
+    t('citacion 08-7', g(/^citacion$/).codigo_id === '08-7' && g(/^declaracion$/).pendientes === 0);
+    const ps = (await handle('GET', '/api/partes?anio=2026&limit=500')).rows; t('sin 11-2 en cañaveral', !ps.some((r: any) => /CAÑAVERAL/.test(r.categoria) && r.codigo_id === '11-2'));
+  }
   const prop = await handle('POST', '/api/codigos', { servicio: '01', rubro: 'edilicios', descripcion: 'otro edilicio' });
   t('crea código propio', prop.id === '01-P1', prop);
   t('duplicado propio 409', (await throws(() => handle('POST', '/api/codigos', { servicio: '01', rubro: 'EDILICIOS', descripcion: 'OTRO EDILICIO' })))?.status === 409);
   await handle('PATCH', `/api/partes/${c1.id}`, { codigo_id: '01-P1' });
-  t('propio suma en trazabilidad', (await handle('GET', '/api/trazabilidad?anio=2026')).tree.find((x: any) => x.id === '01')?.n === 1);
+  t('propio suma en trazabilidad', (await handle('GET', '/api/trazabilidad?anio=2026')).tree.find((x: any) => x.id === '01')?.hijos.some((r: any) => r.nombre === 'EDILICIOS' && r.n === 1));
   t('no borra propio en uso', (await throws(() => handle('DELETE', '/api/codigos/01-P1')))?.status === 409);
   await handle('PATCH', `/api/partes/${c1.id}`, { codigo_id: null }); await handle('DELETE', '/api/codigos/01-P1');
+  // migración de datos viejos: capacitaciones creadas en 08 pasan a 99 junto con los partes que las usan
+  {
+    const ad = new MemoryAdapter(); const s0 = new Store(ad); await s0.init(undefined, async () => csv);
+    s0.config.codigosExtra = s0.config.codigosExtra.map((c) => ({ ...c, servicio: '08', id: c.id.replace('07-', '08-') }));
+    s0.config.catCodigo = Object.fromEntries(Object.entries(s0.config.catCodigo).map(([k, v]) => [k, v ? v.replace('07-', '08-') : v]));
+    s0.config.capSeeded3 = false; s0.config.capSeeded4 = false; await s0.updateParte('2026-0001', { codigo_id: '08-P2' });
+    await (s0 as any).migrarCapacitaciones3(); await (s0 as any).migrarCapacitaciones4();
+    t('migra a 07', s0.config.codigosExtra.filter((c) => c.descripcion.startsWith('CAPACITACION ')).every((c) => c.servicio === '07') && (await s0.getParte('2026-0001'))!.codigo_id === '07-P2' && s0.categorias().find((c) => c.nombre.includes('(4TA)'))!.codigo_id === '07-P4');
+  }
   // código y trazabilidad
   const cod = CODIGOS.find((c) => c.id === '01-5')!;
   const pu = await handle('PATCH', `/api/partes/${c1.id}`, { codigo_id: cod.id, estado: 1 });
   t('código asignado', pu.codigo_id === '01-5' && pu.codigo_revisado === 1 && pu.estado === 1);
-  const tr = await handle('GET', '/api/trazabilidad?anio=2026'); t('traza 1', tr.revisados === 1 && tr.tree[0].id === '01' && tr.tree[0].n === 1);
+  const tr = await handle('GET', '/api/trazabilidad?anio=2026'); t('traza suma el código', tr.tree.find((x: any) => x.id === '01')?.hijos.some((r: any) => r.hijos.some((h: any) => h.nombre.startsWith('5 '))));
   // bulk
   const cats = (await handle('GET', '/api/catalogos')).categorias; const cat = cats.find((c: any) => c.partes > 0 && c.pendientes > 0);
   const b = await handle('POST', '/api/partes/bulk', { categoria_id: cat.id, codigo_id: '02-5' });
