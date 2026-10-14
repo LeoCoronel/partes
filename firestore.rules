@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Solo el titular (email verificado) puede leer/escribir las colecciones de partes.
+    function esTitular() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email == 'TU_EMAIL@gmail.com';   // <-- cambiá por tu email
+    }
+    match /ps_config/{d}   { allow read, write: if esTitular(); }
+    match /ps_personal/{d} { allow read, write: if esTitular(); }
+    match /ps_partes/{d}   { allow read, write: if esTitular(); }
+    match /{document=**}   { allow read, write: if false; }
+  }
+}

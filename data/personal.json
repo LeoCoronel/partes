@@ -1,0 +1,670 @@
+{
+ "jerarquias": [
+  "Cadete",
+  "Bombero",
+  "Subayudante",
+  "Ayudante",
+  "Ayudante de Primera",
+  "Ayudante Principal",
+  "Ayudante Mayor",
+  "Oficial Auxiliar",
+  "Oficial Auxiliar de Escuadra",
+  "Oficial Auxiliar de Dotación",
+  "Subcomandante",
+  "Comandante",
+  "Comandante Mayor",
+  "Comandante General"
+ ],
+ "activos": [
+  {
+   "legajo": "004",
+   "jerarquia": "Comandante Mayor",
+   "nombre": "PERALTA FERNANDO",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "130",
+   "jerarquia": "Oficial Auxiliar de Escuadra",
+   "nombre": "ANTONIAZZI ADRIAN",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "002",
+   "jerarquia": "Comandante Mayor",
+   "nombre": "ROTONDO MARCELO",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "008",
+   "jerarquia": "Oficial Auxiliar de Dotación",
+   "nombre": "CAMPOS VERONICA",
+   "grupo": 3,
+   "turno": "D",
+   "exento": true
+  },
+  {
+   "legajo": "018",
+   "jerarquia": "Oficial Auxiliar",
+   "nombre": "GALLI GUSTAVO",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "022",
+   "jerarquia": "Oficial Auxiliar",
+   "nombre": "BENEDINE RODRIGO",
+   "grupo": 1,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "057",
+   "jerarquia": "Oficial Auxiliar",
+   "nombre": "BARRETO ALBERTO",
+   "grupo": 6,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "169",
+   "jerarquia": "Oficial Auxiliar",
+   "nombre": "MOLINA HERNÁN",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "032",
+   "jerarquia": "Ayudante Mayor",
+   "nombre": "MACIEL FABIÁN",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "039",
+   "jerarquia": "Ayudante Principal",
+   "nombre": "JORGAL ARIEL",
+   "grupo": 3,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "093",
+   "jerarquia": "Ayudante de Primera",
+   "nombre": "OCHOA MARTIN",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "106",
+   "jerarquia": "Ayudante de Primera",
+   "nombre": "MARTINEZ EMILIANO",
+   "grupo": 1,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "006",
+   "jerarquia": "Ayudante",
+   "nombre": "SUARES EPIFANIO",
+   "grupo": 5,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "020",
+   "jerarquia": "Ayudante",
+   "nombre": "FILIPPA MATIAS",
+   "grupo": 5,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "080",
+   "jerarquia": "Ayudante",
+   "nombre": "MORENO MARCELO",
+   "grupo": 6,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "170",
+   "jerarquia": "Ayudante",
+   "nombre": "LOPEZ MARCELA",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "102",
+   "jerarquia": "Ayudante",
+   "nombre": "BARRETO NAHUEL",
+   "grupo": 4,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "088",
+   "jerarquia": "Subayudante",
+   "nombre": "GONZALEZ JOSE LUIS",
+   "grupo": 3,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "103",
+   "jerarquia": "Subayudante",
+   "nombre": "CECCOTI DIEGO",
+   "grupo": 3,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "028",
+   "jerarquia": "Subayudante",
+   "nombre": "LARRERRE RODRIGO",
+   "grupo": 2,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "083",
+   "jerarquia": "Subayudante",
+   "nombre": "REYES LUCAS",
+   "grupo": 5,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "116",
+   "jerarquia": "Subayudante",
+   "nombre": "SILVA ANIBAL",
+   "grupo": 4,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "012",
+   "jerarquia": "Bombero",
+   "nombre": "GALLEGUILLO VERONICA",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "070",
+   "jerarquia": "Bombero",
+   "nombre": "JUAN CRISTIAN",
+   "grupo": 1,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "123",
+   "jerarquia": "Bombero",
+   "nombre": "DIZ JUAN M.",
+   "grupo": 1,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "136",
+   "jerarquia": "Bombero",
+   "nombre": "ORTEGA MARIA",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "141",
+   "jerarquia": "Bombero",
+   "nombre": "MONTENEGRO DANIEL",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "145",
+   "jerarquia": "Bombero",
+   "nombre": "BUERA NADIA",
+   "grupo": 6,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "146",
+   "jerarquia": "Bombero",
+   "nombre": "VELLORI GUIDO",
+   "grupo": 4,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "131",
+   "jerarquia": "Bombero",
+   "nombre": "ACOSTA PAMELA",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "153",
+   "jerarquia": "Bombero",
+   "nombre": "CORONEL LEONARDO",
+   "grupo": 2,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "157",
+   "jerarquia": "Bombero",
+   "nombre": "LOPEZ JONATAN",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "133",
+   "jerarquia": "Bombero",
+   "nombre": "OBERTTI SANTIAGO",
+   "grupo": 3,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "152",
+   "jerarquia": "Bombero",
+   "nombre": "ALVAREZ LUONGO JUAN",
+   "grupo": 4,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "156",
+   "jerarquia": "Bombero",
+   "nombre": "AMIEVA MILTON",
+   "grupo": 3,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "160",
+   "jerarquia": "Bombero",
+   "nombre": "ALVAREZ KAREN",
+   "grupo": 5,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "161",
+   "jerarquia": "Bombero",
+   "nombre": "MILONE CLARA",
+   "grupo": 2,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "168",
+   "jerarquia": "Bombero",
+   "nombre": "RAMIREZ PABLO",
+   "grupo": 6,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "132",
+   "jerarquia": "Bombero",
+   "nombre": "VIDAL GERMAN",
+   "grupo": 1,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "171",
+   "jerarquia": "Bombero",
+   "nombre": "LARRERE FACUNDO",
+   "grupo": 5,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "173",
+   "jerarquia": "Bombero",
+   "nombre": "SCHIAVO GALVAN RUTH",
+   "grupo": 2,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "174",
+   "jerarquia": "Bombero",
+   "nombre": "FERREYRA ACOSTA VALENTINA",
+   "grupo": 6,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "175",
+   "jerarquia": "Bombero",
+   "nombre": "REYNA ANAHI",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "177",
+   "jerarquia": "Bombero",
+   "nombre": "ASSELBORN LAUTARO",
+   "grupo": 3,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "178",
+   "jerarquia": "Bombero",
+   "nombre": "GOROSITO FEDERICO",
+   "grupo": 1,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "179",
+   "jerarquia": "Bombero",
+   "nombre": "SEYFARTH CAMILA",
+   "grupo": 4,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "180",
+   "jerarquia": "Bombero",
+   "nombre": "VIANA CLARA",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "181",
+   "jerarquia": "Bombero",
+   "nombre": "BLANCO DAMIAN",
+   "grupo": 2,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "183",
+   "jerarquia": "Bombero",
+   "nombre": "URQUIA PABLO",
+   "grupo": 2,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "184",
+   "jerarquia": "Bombero",
+   "nombre": "LARENA ALAN",
+   "grupo": 6,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "185",
+   "jerarquia": "Bombero",
+   "nombre": "ACOSTA IARA",
+   "grupo": 3,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "186",
+   "jerarquia": "Bombero",
+   "nombre": "LEON FACUNDO",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "187",
+   "jerarquia": "Bombero",
+   "nombre": "TORRES ROMINA",
+   "grupo": 5,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "188",
+   "jerarquia": "Bombero",
+   "nombre": "LOZA LUDMILA",
+   "grupo": 4,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "189",
+   "jerarquia": "Bombero",
+   "nombre": "TORALES LUJAN DIANA",
+   "grupo": 6,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "190",
+   "jerarquia": "Bombero",
+   "nombre": "BARRETO VALENTÍN",
+   "grupo": 2,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "191",
+   "jerarquia": "Bombero",
+   "nombre": "MORENO ROCIO",
+   "grupo": 4,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "192",
+   "jerarquia": "Bombero",
+   "nombre": "POLIDORI DANA",
+   "grupo": 2,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "193",
+   "jerarquia": "Bombero",
+   "nombre": "SANCHEZ LAUTARO",
+   "grupo": 4,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "194",
+   "jerarquia": "Bombero",
+   "nombre": "SILVA ALEJANDRA",
+   "grupo": 3,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "195",
+   "jerarquia": "Bombero",
+   "nombre": "VUKELIC GONZALO",
+   "grupo": 3,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "196",
+   "jerarquia": "Bombero",
+   "nombre": "WIEDEMANN TAHIEL",
+   "grupo": 1,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "197",
+   "jerarquia": "Bombero",
+   "nombre": "VEGA GABRIEL",
+   "grupo": 5,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "198",
+   "jerarquia": "Bombero",
+   "nombre": "ARRIETA MARIANA",
+   "grupo": 6,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "199",
+   "jerarquia": "Bombero",
+   "nombre": "ENCINA LUNA FABIO",
+   "grupo": 1,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "200",
+   "jerarquia": "Bombero",
+   "nombre": "GARCETE ROJAS MELANY",
+   "grupo": 5,
+   "turno": "N",
+   "exento": false
+  },
+  {
+   "legajo": "201",
+   "jerarquia": "Bombero",
+   "nombre": "CASCO PABLO",
+   "grupo": 2,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "202",
+   "jerarquia": "Bombero",
+   "nombre": "LUJAN VICTOR",
+   "grupo": 5,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "204",
+   "jerarquia": "Bombero",
+   "nombre": "GIUDITTA SAMUEL",
+   "grupo": 2,
+   "turno": "N",
+   "exento": false
+  }
+ ],
+ "inactivos": [
+  {
+   "legajo": "009",
+   "jerarquia": "Subcomandante",
+   "nombre": "COLLI CARANO SONIA",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "055",
+   "jerarquia": "Subayudante",
+   "nombre": "OJEDA VICTOR",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "084",
+   "jerarquia": "Bombero",
+   "nombre": "PERSICO NICOLAS",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "096",
+   "jerarquia": "Subayudante",
+   "nombre": "GUTIERREZ ALEJANDRO",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "097",
+   "jerarquia": "Subayudante",
+   "nombre": "MOLINA EZEQUIEL",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "111",
+   "jerarquia": "Bombero",
+   "nombre": "SUAREZ DAIANA",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "134",
+   "jerarquia": "Bombero",
+   "nombre": "CHIAPPESONI G",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "135",
+   "jerarquia": "Bombero",
+   "nombre": "MENDEZ SEBASTIAN",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "143",
+   "jerarquia": "Bombero",
+   "nombre": "ALEGRE BENITEZ RAMON",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "148",
+   "jerarquia": "Bombero",
+   "nombre": "YUDICHE ANGEL",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "149",
+   "jerarquia": "Bombero",
+   "nombre": "PORTEL MELISSA",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  },
+  {
+   "legajo": "166",
+   "jerarquia": "Bombero",
+   "nombre": "MONTES FERNANDO",
+   "grupo": null,
+   "turno": "D",
+   "exento": false
+  }
+ ]
+}

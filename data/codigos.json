@@ -1,0 +1,2459 @@
+[
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 1,
+  "descripcion": "VIVIENDA INDIVIDUAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 2,
+  "descripcion": "VIVIENDA MULTIFAMILIAR",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 3,
+  "descripcion": "EDIFICIO DE MAS DE 3 PISOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 4,
+  "descripcion": "VIVIENDA PRECARIA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 5,
+  "descripcion": "EDIFICIO PUBLICO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 6,
+  "descripcion": "COMERCIO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 7,
+  "descripcion": "GALERIA COMERCIAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 8,
+  "descripcion": "OFICINA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 9,
+  "descripcion": "SUPERMERCADO MAYORISTA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 10,
+  "descripcion": "HOTELES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 11,
+  "descripcion": "QUINCHO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 12,
+  "descripcion": "GIMNASIO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 13,
+  "descripcion": "HOSPITAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 14,
+  "descripcion": "CENTRO D SALUD",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 15,
+  "descripcion": "CLINICA/SANATORIO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 16,
+  "descripcion": "ESCUELA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 17,
+  "descripcion": "CINE",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 18,
+  "descripcion": "TEATRO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 19,
+  "descripcion": "ESTADIOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 20,
+  "descripcion": "PANADERIAS/CONFITERIAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 21,
+  "descripcion": "BARES/PUB",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 22,
+  "descripcion": "RESTAURANT",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 23,
+  "descripcion": "TEMPLOS/IGLESIAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 24,
+  "descripcion": "GARAGES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 25,
+  "descripcion": "DEPOSITOS PUBLICOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 26,
+  "descripcion": "CUARTELES MILITARES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 27,
+  "descripcion": "DEPENDENCIAS POLICIALES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 28,
+  "descripcion": "INDUSTRIAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 29,
+  "descripcion": "LABORATORIOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 30,
+  "descripcion": "PLANTAS NUCLEARES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 31,
+  "descripcion": "TALLERES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 32,
+  "descripcion": "LOGISTICAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 33,
+  "descripcion": "DROGUERIAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 34,
+  "descripcion": "FARMACIAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 35,
+  "descripcion": "VIVEROS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 36,
+  "descripcion": "OBRA EN CONSTRUCCION",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 37,
+  "descripcion": "OBRADOR",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 38,
+  "descripcion": "SEDE SINDICAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 39,
+  "descripcion": "LOCALES BAILABLES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 40,
+  "descripcion": "DEPOSITO/GALPON",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 41,
+  "descripcion": "HOGAR DE NIÑOS/GERIATRICOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 42,
+  "descripcion": "ENTIDAD BANCARIA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 43,
+  "descripcion": "CAJEROS AUTOMATICOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 44,
+  "descripcion": "STUD/CABALLERIZA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 45,
+  "descripcion": "ESTABLECIMIENTO AGRICOLA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 46,
+  "descripcion": "ESTABLECIMIENTO GANADERO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 47,
+  "descripcion": "ESTABLECIMIENTO AVICOLA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 48,
+  "descripcion": "DEPENDENCIAS PORTUARIAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 49,
+  "descripcion": "ASTILLEROS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 50,
+  "descripcion": "GUARDERIAS NAUTICAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 51,
+  "descripcion": "AEROPUERTOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 52,
+  "descripcion": "AERO CLUBES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 53,
+  "descripcion": "DEPOSITOS FERROVIARIOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 54,
+  "descripcion": "MOLINO HARINERO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "EDILICIO",
+  "cod": 55,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "ELECTRICO",
+  "cod": 56,
+  "descripcion": "TABLERO ELECTRICO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "ELECTRICO",
+  "cod": 57,
+  "descripcion": "TENDIDO ELECTRICO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "ELECTRICO",
+  "cod": 58,
+  "descripcion": "USINA ELECTRICA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "ELECTRICO",
+  "cod": 59,
+  "descripcion": "SUB ESTACION ELECTRICA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "ELECTRICO",
+  "cod": 60,
+  "descripcion": "TRANSFORMADOR",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "ELECTRICO",
+  "cod": 61,
+  "descripcion": "POSTE DE LUZ",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AGRICOLA",
+  "cod": 62,
+  "descripcion": "FARDOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AGRICOLA",
+  "cod": 63,
+  "descripcion": "ROLLOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AGRICOLA",
+  "cod": 64,
+  "descripcion": "SILOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AGRICOLA",
+  "cod": 65,
+  "descripcion": "SILOS BOLSA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AGRICOLA",
+  "cod": 66,
+  "descripcion": "SILOS DE FORRAJES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AGRICOLA",
+  "cod": 67,
+  "descripcion": "SECADORA DE SILOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AGRICOLA",
+  "cod": 68,
+  "descripcion": "TAMBOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AGRICOLA",
+  "cod": 69,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 70,
+  "descripcion": "MAQUINARIA VIAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 71,
+  "descripcion": "MAQUINARIA AGRICOLA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 72,
+  "descripcion": "AUTOMOVIL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 73,
+  "descripcion": "PICK UP",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 74,
+  "descripcion": "MICRO OMNIBUS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 75,
+  "descripcion": "MINI BUS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 76,
+  "descripcion": "CAMION",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 77,
+  "descripcion": "CAMION DE CARGAS GRAL.",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 78,
+  "descripcion": "CAMION CISTERNA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 79,
+  "descripcion": "CARGAS ESPECIALES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 80,
+  "descripcion": "CAMION MILITAR",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 81,
+  "descripcion": "CASAS RODANTES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 82,
+  "descripcion": "TRACTOR VEHICULO UTILITARIO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 83,
+  "descripcion": "VEHICULOS AGRICOLAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 84,
+  "descripcion": "FORMACION FERROVIARIA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 85,
+  "descripcion": "MOTOCICLETA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VEHICULAR",
+  "cod": 86,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "NAUTICO",
+  "cod": 87,
+  "descripcion": "EMBARCACION EN GRAL.",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "NAUTICO",
+  "cod": 88,
+  "descripcion": "INCENDIOS DE BUQUES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "NAUTICO",
+  "cod": 89,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AERONAVE",
+  "cod": 90,
+  "descripcion": "AVION EN GRAL.",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AERONAVE",
+  "cod": 91,
+  "descripcion": "HELICOPTEROS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AERONAVE",
+  "cod": 92,
+  "descripcion": "HELICOPTEROS MILITARES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AERONAVE",
+  "cod": 93,
+  "descripcion": "GLOBOS AEROSTATICOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "AERONAVE",
+  "cod": 94,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "HIDROCARBURO",
+  "cod": 95,
+  "descripcion": "OLEODUCTO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "HIDROCARBURO",
+  "cod": 96,
+  "descripcion": "GASEODUCTO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "HIDROCARBURO",
+  "cod": 97,
+  "descripcion": "POLIDUCTO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "HIDROCARBURO",
+  "cod": 98,
+  "descripcion": "DEPOSITO DE COMBUSTIBLES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "HIDROCARBURO",
+  "cod": 99,
+  "descripcion": "ESTACION DE SERVICIO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "HIDROCARBURO",
+  "cod": 100,
+  "descripcion": "PLANTA REGULADORA DE GAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "HIDROCARBURO",
+  "cod": 101,
+  "descripcion": "GARRAFA/ESTACION DE CARGA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "HIDROCARBURO",
+  "cod": 102,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "MISCELANIAS",
+  "cod": 103,
+  "descripcion": "CARPA/GAZEBO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "MISCELANIAS",
+  "cod": 104,
+  "descripcion": "PIROTECNIA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "MISCELANIAS",
+  "cod": 105,
+  "descripcion": "CALDERA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "MISCELANIAS",
+  "cod": 106,
+  "descripcion": "BASURAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "MISCELANIAS",
+  "cod": 107,
+  "descripcion": "CONTENEDOR",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "MISCELANIAS",
+  "cod": 108,
+  "descripcion": "CESTO DE BASURA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "MISCELANIAS",
+  "cod": 109,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VARIOS",
+  "cod": 110,
+  "descripcion": "FALSA ALARMA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VARIOS",
+  "cod": 111,
+  "descripcion": "SERVICIO SIN EFECTO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "01",
+  "servicioNombre": "Incendio",
+  "rubro": "VARIOS",
+  "cod": 112,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "TRASLADO",
+  "cod": 1,
+  "descripcion": "TRASLADO DE ACCIDENTADO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "TRASLADO",
+  "cod": 2,
+  "descripcion": "SALVAMENTO DE ACCIDENTADO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "TRASLADO",
+  "cod": 3,
+  "descripcion": "PARTURIENTA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "TRASLADO",
+  "cod": 4,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "RESCATE",
+  "cod": 5,
+  "descripcion": "RESCATE DE PERSONA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "RESCATE",
+  "cod": 6,
+  "descripcion": "RESCATE EN GRAL.",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "RESCATE",
+  "cod": 7,
+  "descripcion": "RECUPERACION DE CADAVER",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "RESCATE",
+  "cod": 8,
+  "descripcion": "PERSONA ATRAPADA EN ASCENSOR",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "RESCATE",
+  "cod": 9,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "ACCIDENTE",
+  "cod": 10,
+  "descripcion": "ACCIDENTE CICLISTA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "ACCIDENTE",
+  "cod": 11,
+  "descripcion": "ACCIDENTE MOTOCICLISTA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "ACCIDENTE",
+  "cod": 12,
+  "descripcion": "ACCIDENTE VEHICULAR",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "ACCIDENTE",
+  "cod": 13,
+  "descripcion": "ACCIDENTE AEREO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "ACCIDENTE",
+  "cod": 14,
+  "descripcion": "ACCIDENTE NAUTICO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "ACCIDENTE",
+  "cod": 15,
+  "descripcion": "ACCIDENTE FERROVIARIO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "ACCIDENTE",
+  "cod": 16,
+  "descripcion": "ACCIDENTE ECUESTRE",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "ACCIDENTE",
+  "cod": 17,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "CATASTROFE",
+  "cod": 18,
+  "descripcion": "DERRUMBES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "CATASTROFE",
+  "cod": 19,
+  "descripcion": "INUNDACIONES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "CATASTROFE",
+  "cod": 20,
+  "descripcion": "VOLADURAS DE TECHOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "CATASTROFE",
+  "cod": 21,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "AMENAZA",
+  "cod": 22,
+  "descripcion": "ARTEFACTO EXPLOSIVO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "02",
+  "servicioNombre": "Auxilio",
+  "rubro": "AMENAZA",
+  "cod": 23,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "SERVICIO",
+  "cod": 1,
+  "descripcion": "TRASLADO DE ENFERMO",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "SERVICIO",
+  "cod": 2,
+  "descripcion": "TRASLADO DE INCAPACITADO",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "SERVICIO",
+  "cod": 3,
+  "descripcion": "SUMINISTRO MEDICAMENTOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "SERVICIO",
+  "cod": 4,
+  "descripcion": "DONACION SANGRE",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "SERVICIO",
+  "cod": 5,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "APOYO",
+  "cod": 6,
+  "descripcion": "APOYO A FUERZAS DE SEGURIDAD",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "APOYO",
+  "cod": 7,
+  "descripcion": "APOYO A CENTROS DE SALUD",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "APOYO",
+  "cod": 8,
+  "descripcion": "APOYO A MUNICIPALIDADES",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "APOYO",
+  "cod": 9,
+  "descripcion": "APOYO A REPARTICIONES PUBLICAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "APOYO",
+  "cod": 10,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 11,
+  "descripcion": "DESAGOTES",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 12,
+  "descripcion": "ESCOMBRAMIENTO",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 13,
+  "descripcion": "APUNTALAMIENTO",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 14,
+  "descripcion": "REMOCION",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 15,
+  "descripcion": "REMOLQUES",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 16,
+  "descripcion": "COLOCACION DE DRIZA",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 17,
+  "descripcion": "BUSQUEDA DE PERSONAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 18,
+  "descripcion": "BUSQUEDA DE ANIMAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 19,
+  "descripcion": "LIMPIEZA DE CALLES Y RUTAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 20,
+  "descripcion": "BALIZAMIENTO",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 21,
+  "descripcion": "ARBOL CAIDO",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 22,
+  "descripcion": "ESCAPE DE GAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 23,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "03",
+  "servicioNombre": "Especiales",
+  "rubro": "TAREA",
+  "cod": 24,
+  "descripcion": "SUMINISTRO DE AGUA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "04",
+  "servicioNombre": "Desastres",
+  "rubro": "LOCAL",
+  "cod": 1,
+  "descripcion": "DEFENSA CIVIL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "04",
+  "servicioNombre": "Desastres",
+  "rubro": "LOCAL",
+  "cod": 2,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "MATERIAL",
+  "cod": 1,
+  "descripcion": "CON AUTOBOMBA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "MATERIAL",
+  "cod": 2,
+  "descripcion": "CON CISTERNA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "MATERIAL",
+  "cod": 3,
+  "descripcion": "CON ESCALERA MECANICA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "MATERIAL",
+  "cod": 4,
+  "descripcion": "CON HIDROELEVADOR",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "MATERIAL",
+  "cod": 5,
+  "descripcion": "CON AMBULANCIA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "MATERIAL",
+  "cod": 6,
+  "descripcion": "CON LANCHA AUTOPROPULSADA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "MATERIAL",
+  "cod": 7,
+  "descripcion": "CON VEHICULO POLVERO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "MATERIAL",
+  "cod": 8,
+  "descripcion": "CON ESPUMIGERO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "MATERIAL",
+  "cod": 9,
+  "descripcion": "CON EQUIPO MAT.PELIGROSOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "MATERIAL",
+  "cod": 10,
+  "descripcion": "CON TRANSPORTE PERSONAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "MATERIAL",
+  "cod": 11,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "PERSONAL",
+  "cod": 12,
+  "descripcion": "CON PERSONAL BOMBEROS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "PERSONAL",
+  "cod": 13,
+  "descripcion": "CON ESCUADRA DE COMUNICACIONES",
+  "dup": true
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "PERSONAL",
+  "cod": 13,
+  "descripcion": "CON ESCUADRA DE RESCATE EN ALTURAS",
+  "dup": true
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "PERSONAL",
+  "cod": 14,
+  "descripcion": "CON ESCUADRA DE RESCATE ACUATICO Y BUCEO",
+  "dup": true
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "PERSONAL",
+  "cod": 14,
+  "descripcion": "CON ESCUADRA DE RADIOACTIVOS Y EXPLOSIVOS",
+  "dup": true
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "PERSONAL",
+  "cod": 15,
+  "descripcion": "CON ESCUADRA DE PRIMEROS AUXILIOS",
+  "dup": true
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "PERSONAL",
+  "cod": 15,
+  "descripcion": "CON ESCUADRA DE INCENDIOS FORESTALES",
+  "dup": true
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "PERSONAL",
+  "cod": 16,
+  "descripcion": "CON ESCUADRA DE INCENDIO Y RESCATE AERONAUT.",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "PERSONAL",
+  "cod": 17,
+  "descripcion": "CON ESCUADRA DE INCENDIO Y RESCATE NAVAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "PERSONAL",
+  "cod": 18,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "EQUIPO",
+  "cod": 19,
+  "descripcion": "CON EQUIPO DE SALVAMENTO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "EQUIPO",
+  "cod": 20,
+  "descripcion": "CON EQUIPO DE RESCATE",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "EQUIPO",
+  "cod": 21,
+  "descripcion": "CON MOTOBOMBA",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "EQUIPO",
+  "cod": 22,
+  "descripcion": "CON USINA MOVIL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "EQUIPO",
+  "cod": 23,
+  "descripcion": "CON GENERADOR",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "EQUIPO",
+  "cod": 24,
+  "descripcion": "CON E.R.A.",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "EQUIPO",
+  "cod": 25,
+  "descripcion": "CON EQUIPO DE REMOCION ESCOMBROS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "EQUIPO",
+  "cod": 26,
+  "descripcion": "CON MANGAS DE INCENDIOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "05",
+  "servicioNombre": "Colaboracion",
+  "rubro": "EQUIPO",
+  "cod": 27,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "06",
+  "servicioNombre": "Guardias",
+  "rubro": "PREVENTIVA",
+  "cod": 1,
+  "descripcion": "GUARDIA DE PREVENCION",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "06",
+  "servicioNombre": "Guardias",
+  "rubro": "PREVENTIVA",
+  "cod": 2,
+  "descripcion": "GUARDIA DE EMERGENCIA",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "06",
+  "servicioNombre": "Guardias",
+  "rubro": "PREVENTIVA",
+  "cod": 3,
+  "descripcion": "DESCENSO DE HELICOPTERO",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "06",
+  "servicioNombre": "Guardias",
+  "rubro": "PREVENTIVA",
+  "cod": 4,
+  "descripcion": "GUARDIA OPERATIVA",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "06",
+  "servicioNombre": "Guardias",
+  "rubro": "PREVENTIVA",
+  "cod": 5,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "06",
+  "servicioNombre": "Guardias",
+  "rubro": "INTERNA",
+  "cod": 6,
+  "descripcion": "GUARDIA DE HONOR",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "06",
+  "servicioNombre": "Guardias",
+  "rubro": "INTERNA",
+  "cod": 7,
+  "descripcion": "ORDEN INTERNO",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "06",
+  "servicioNombre": "Guardias",
+  "rubro": "INTERNA",
+  "cod": 8,
+  "descripcion": "GUARDIA",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "06",
+  "servicioNombre": "Guardias",
+  "rubro": "INTERNA",
+  "cod": 9,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "CAPACITACION",
+  "cod": 1,
+  "descripcion": "REUNION DEL CONSEJO ZONAL CAPACITACION",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "CAPACITACION",
+  "cod": 2,
+  "descripcion": "REUNION DEL CONSEJO REGIONAL CAPACITACION",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "CAPACITACION",
+  "cod": 3,
+  "descripcion": "REUNION DEL CONSEJO PROVINCIAL CAPACITACION",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "CAPACITACION",
+  "cod": 4,
+  "descripcion": "VIAJE DE UN INSTRUCTOR",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "CAPACITACION",
+  "cod": 5,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "ETICA",
+  "cod": 6,
+  "descripcion": "REUNION DEL CONSEJO DE ETICA REGIONAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "ETICA",
+  "cod": 7,
+  "descripcion": "REUNION DEL CONSEJO DE ETICA PROVINCIAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "ETICA",
+  "cod": 8,
+  "descripcion": "REUNION DE TRIBUNAL DE BOMBEROS",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "ETICA",
+  "cod": 9,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "REUNION",
+  "cod": 10,
+  "descripcion": "REUNION CON EL CONSEJO NACIONAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "REUNION",
+  "cod": 11,
+  "descripcion": "REUNION CON LA F.A.B.V.P.B.A",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "REUNION",
+  "cod": 12,
+  "descripcion": "REUNION DE CONSEJO REGIONAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "REUNION",
+  "cod": 13,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "GENERAL",
+  "cod": 14,
+  "descripcion": "REUNION GENERAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "GENERAL",
+  "cod": 15,
+  "descripcion": "REUNION C/OTRAS DEPEND.O INSTITUCIONES",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "07",
+  "servicioNombre": "Comando",
+  "rubro": "GENERAL",
+  "cod": 16,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "INFORME",
+  "cod": 1,
+  "descripcion": "ASESORAMIENTO TECNICO A PARTICULAR",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "INFORME",
+  "cod": 2,
+  "descripcion": "INSPECC.EN MATERIALES O INSTR.C/INCENDIOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "INFORME",
+  "cod": 3,
+  "descripcion": "VERIFICACION DE PLANOS CONTRA INCENDIOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "INFORME",
+  "cod": 4,
+  "descripcion": "PERICIAS DE SERVICIOS PRESTADOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "INFORME",
+  "cod": 5,
+  "descripcion": "INFORMES TECNICOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "INFORME",
+  "cod": 6,
+  "descripcion": "SIMULACROS",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "INFORME",
+  "cod": 7,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "CAPACITACION",
+  "cod": 8,
+  "descripcion": "VISITAS GUIADAS AL CUARTEL",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "CAPACITACION",
+  "cod": 9,
+  "descripcion": "VIAJE DE INTRUCTORES A DICTAR CLASES",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "CAPACITACION",
+  "cod": 10,
+  "descripcion": "VIAJE DE INTEGRANTES DE MESA EXAMINADORA",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "CAPACITACION",
+  "cod": 11,
+  "descripcion": "CONSTITUCION DE MESA EXAMINADORA",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "CAPACITACION",
+  "cod": 12,
+  "descripcion": "PRACTICA O CURSO CON OTRAS INSTITUCIONES",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "CAPACITACION",
+  "cod": 13,
+  "descripcion": "CONFERENCIA BOMBERIL",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "CAPACITACION",
+  "cod": 14,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "CONGRESO",
+  "cod": 15,
+  "descripcion": "CONGRESO POLICIAL BOMBEROS",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "CONGRESO",
+  "cod": 16,
+  "descripcion": "CONGRESO NACIONAL BOMBEROS",
+  "dup": false
+ },
+ {
+  "clasificacion": "FUNCIONAL",
+  "servicio": "08",
+  "servicioNombre": "Tecnico",
+  "rubro": "CONGRESO",
+  "cod": 17,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "INTERNO",
+  "cod": 1,
+  "descripcion": "DESFILE DE PERSONAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "INTERNO",
+  "cod": 2,
+  "descripcion": "FESTEJO ANIVERSARIO DE LA INSTITUCION",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "INTERNO",
+  "cod": 3,
+  "descripcion": "FESTEJO DIA DEL BOMBERO",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "INTERNO",
+  "cod": 4,
+  "descripcion": "DELEGACION POR ACTO O/INST.BOMBERILES",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "INTERNO",
+  "cod": 5,
+  "descripcion": "FORMACION POR HONORES FUNEBRES",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "INTERNO",
+  "cod": 6,
+  "descripcion": "RECEPCION DE VISITA BOMBERIL A LA INSTITUCION",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "INTERNO",
+  "cod": 7,
+  "descripcion": "ACTOS P/PRESENTACION DE UNIDADES O MATERIALES",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "INTERNO",
+  "cod": 8,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "EXTERNO",
+  "cod": 9,
+  "descripcion": "FORMACION POR FECHA PATRIA",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "EXTERNO",
+  "cod": 10,
+  "descripcion": "DELEGACION POR ACTO PATRIO",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "EXTERNO",
+  "cod": 11,
+  "descripcion": "DELEGACION POR ACTO DE OTRAS INSTITUCIONES",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "EXTERNO",
+  "cod": 12,
+  "descripcion": "DELEGACION POR ACTOS PATRONALES O LOCALES",
+  "dup": false
+ },
+ {
+  "clasificacion": "AUTORIZADO",
+  "servicio": "09",
+  "servicioNombre": "Ceremonial",
+  "rubro": "EXTERNO",
+  "cod": 13,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "10",
+  "servicioNombre": "Incid.Quimicos",
+  "rubro": "MATERIAL",
+  "cod": 1,
+  "descripcion": "INCENDIO MAT-PEL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "10",
+  "servicioNombre": "Incid.Quimicos",
+  "rubro": "MATERIAL",
+  "cod": 2,
+  "descripcion": "DERRAME MAT-PEL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "10",
+  "servicioNombre": "Incid.Quimicos",
+  "rubro": "MATERIAL",
+  "cod": 3,
+  "descripcion": "EXPLOSIONES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "10",
+  "servicioNombre": "Incid.Quimicos",
+  "rubro": "MATERIAL",
+  "cod": 4,
+  "descripcion": "PREVENCION POR MAT-PEL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "10",
+  "servicioNombre": "Incid.Quimicos",
+  "rubro": "MATERIAL",
+  "cod": 5,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "10",
+  "servicioNombre": "Incid.Quimicos",
+  "rubro": "MATERIAL",
+  "cod": 6,
+  "descripcion": "ESCAPE DE GAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "PASTIZAL",
+  "cod": 1,
+  "descripcion": "PASTIZALES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "PASTIZAL",
+  "cod": 2,
+  "descripcion": "MATORRALES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "PASTIZAL",
+  "cod": 3,
+  "descripcion": "CAMPOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "PASTIZAL",
+  "cod": 4,
+  "descripcion": "PAJONALES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "PASTIZAL",
+  "cod": 5,
+  "descripcion": "BAÑADOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "PASTIZAL",
+  "cod": 6,
+  "descripcion": "BANQUINAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "PASTIZAL",
+  "cod": 7,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "FORESTACION",
+  "cod": 8,
+  "descripcion": "MONTE",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "FORESTACION",
+  "cod": 9,
+  "descripcion": "ISLAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "FORESTACION",
+  "cod": 10,
+  "descripcion": "CERROS MONTAÑAS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "FORESTACION",
+  "cod": 11,
+  "descripcion": "RESERVA NATURAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "FORESTACION",
+  "cod": 12,
+  "descripcion": "PARQUES NACIONALES",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "FORESTACION",
+  "cod": 13,
+  "descripcion": "RASTROJO",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "FORESTACION",
+  "cod": 14,
+  "descripcion": "SEMBRADIOS",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "FORESTACION",
+  "cod": 15,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "INTERFACE",
+  "cod": 16,
+  "descripcion": "INCENDIO DE INTERFACE",
+  "dup": false
+ },
+ {
+  "clasificacion": "EMERGENCIA",
+  "servicio": "11",
+  "servicioNombre": "Forestal",
+  "rubro": "INTERFACE",
+  "cod": 17,
+  "descripcion": "(OTROS)",
+  "dup": false
+ },
+ {
+  "clasificacion": "OTROS",
+  "servicio": "99",
+  "servicioNombre": "Otros",
+  "rubro": "INTERNO",
+  "cod": 1,
+  "descripcion": "REUNION GENERAL",
+  "dup": false
+ },
+ {
+  "clasificacion": "OTROS",
+  "servicio": "99",
+  "servicioNombre": "Otros",
+  "rubro": "INTERNO",
+  "cod": 2,
+  "descripcion": "CAPACITACION INTERNA",
+  "dup": false
+ },
+ {
+  "clasificacion": "OTROS",
+  "servicio": "99",
+  "servicioNombre": "Otros",
+  "rubro": "INTERNO",
+  "cod": 3,
+  "descripcion": "ORDEN INTERNO",
+  "dup": false
+ },
+ {
+  "clasificacion": "OTROS",
+  "servicio": "99",
+  "servicioNombre": "Otros",
+  "rubro": "INTERNO",
+  "cod": 4,
+  "descripcion": "JEFATURA",
+  "dup": false
+ }
+]
