@@ -39,3 +39,7 @@ table.tbl tbody tr:hover { background: var(--color-panel2); }
 .muted { color: var(--color-mute); }
 .toast { position: fixed; bottom: 1rem; right: 1rem; background: var(--color-panel2); border: 1px solid var(--color-line);
   padding: .6rem .9rem; border-radius: 10px; font-size: .85rem; z-index: 50; max-width: 24rem; }
+
+/* Color de fila según el estado del parte */
+table.tbl tbody tr[data-e] { background: color-mix(in srgb, var(--c) 9%, transparent); box-shadow: inset 3px 0 0 var(--c); }
+table.tbl tbody tr[data-e]:hover { background: color-mix(in srgb, var(--c) 16%, transparent); }

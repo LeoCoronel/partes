@@ -36,6 +36,17 @@ const mk = async (seed = true) => { const s = new Store(new MemoryAdapter()); aw
   await handle('PUT', '/api/config', { anio: 2027, numero: 3, nh: 31000 });
   t('recalcula NH', (await handle('GET', `/api/partes/${c3.id}`)).nh === 31000 && (await handle('GET', `/api/partes/${c4.id}`)).nh === 31002);
 
+  // códigos propios y capacitaciones
+  const cat0 = (await handle('GET', '/api/catalogos'));
+  t('7 códigos propios de capacitación', cat0.codigos.filter((c: any) => c.propio).length === 7, cat0.codigos.filter((c: any) => c.propio).length);
+  const c4ta = cat0.categorias.find((c: any) => c.nombre.includes('(4TA)')); t('4ta sugiere código propio', c4ta.codigo_id === '08-P4', c4ta.codigo_id);
+  const prop = await handle('POST', '/api/codigos', { servicio: '01', rubro: 'edilicios', descripcion: 'otro edilicio' });
+  t('crea código propio', prop.id === '01-P1', prop);
+  t('duplicado propio 409', (await throws(() => handle('POST', '/api/codigos', { servicio: '01', rubro: 'EDILICIOS', descripcion: 'OTRO EDILICIO' })))?.status === 409);
+  await handle('PATCH', `/api/partes/${c1.id}`, { codigo_id: '01-P1' });
+  t('propio suma en trazabilidad', (await handle('GET', '/api/trazabilidad?anio=2026')).tree.find((x: any) => x.id === '01')?.n === 1);
+  t('no borra propio en uso', (await throws(() => handle('DELETE', '/api/codigos/01-P1')))?.status === 409);
+  await handle('PATCH', `/api/partes/${c1.id}`, { codigo_id: null }); await handle('DELETE', '/api/codigos/01-P1');
   // código y trazabilidad
   const cod = CODIGOS.find((c) => c.id === '01-5')!;
   const pu = await handle('PATCH', `/api/partes/${c1.id}`, { codigo_id: cod.id, estado: 1 });

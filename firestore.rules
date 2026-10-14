@@ -5,7 +5,7 @@ service cloud.firestore {
     function esTitular() {
       return request.auth != null
         && request.auth.token.email_verified == true
-        && request.auth.token.email == 'TU_EMAIL@gmail.com';   // <-- cambiá por tu email
+        && request.auth.token.email == 'leomcoronel99@gmail.com';   // <-- cambiá por tu email
     }
     match /ps_config/{d}   { allow read, write: if esTitular(); }
     match /ps_personal/{d} { allow read, write: if esTitular(); }

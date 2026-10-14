@@ -20,11 +20,15 @@ export async function handle(method: string, url: string, body: any = {}): Promi
   }
   if (r === 'trazabilidad') return s.trazabilidad(anioQ, q.get('mes') ? Number(q.get('mes')) : undefined);
   if (r === 'importar') return s.importCsv(String(body.csv ?? ''), Number(body.anio));
+  if (r === 'codigos') {
+    if (method === 'POST') return { id: await s.addCodigo(body) };
+    if (method === 'DELETE') { await s.deleteCodigo(id); return { ok: true }; }
+  }
   if (r === 'categorias' && method === 'PATCH') { await s.setCategoriaCodigo(id, body.codigo_id ?? null); return { ok: true }; }
   if (r === 'partes') {
     if (id === 'bulk') {
       const n = body.confirmar ? await s.confirmarSugeridos(body.categoria_id) : await s.bulkCodigo(body.categoria_id, body.codigo_id);
-      return { actualizados: n };
+      return { cambiados: n, actualizados: n };
     }
     if (!id) return method === 'POST' ? s.createParte(body) : s.listPartes(q);
     if (method === 'PATCH') return s.updateParte(id, body);

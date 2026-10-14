@@ -10,7 +10,7 @@ export const MES_LARGO = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
 export const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
 export const slug = (s: string) => norm(s).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 
-export type Codigo = { id: string; servicio: string; rubro: string; cod: number; descripcion: string; dup: number; orden: number };
+export type Codigo = { id: string; servicio: string; rubro: string; cod: number | string; descripcion: string; dup: number; orden: number };
 export type Servicio = { id: string; nombre: string; clasificacion: string };
 export type CategoriaBase = { id: string; nombre: string; servicio: string | null; rubro: string | null; codigo_id: string | null };
 
@@ -35,5 +35,5 @@ export const CATEGORIAS_BASE: CategoriaBase[] = (categoriasJson as any[]).map((c
   codigo_id: c.cod != null ? CODIGOS.find((x) => x.servicio === c.servicio && x.cod === c.cod && !x.dup)?.id ?? null : null,
 }));
 
-export type PersonalSeed = { legajo: string; jerarquia: string; nombre: string; grupo: number | null; turno: string; exento: boolean };
+export type PersonalSeed = { legajo: string; jerarquia: string; nombre: string };
 export const PERSONAL_SEED = { activos: (personalJson as any).activos as PersonalSeed[], inactivos: (personalJson as any).inactivos as PersonalSeed[] };
